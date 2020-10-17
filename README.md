@@ -1,0 +1,1 @@
+### Golang Shortcuts interactive cli
