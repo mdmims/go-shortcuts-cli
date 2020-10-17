@@ -20,7 +20,7 @@ func New() Commands {
 			"github": {
 				prompt.Suggest{Text: "Mdmims", Description: "Personal Github Repo"},
 			},
-			"go": {
+			"golang": {
 				prompt.Suggest{Text: "Docs", Description: "Golang documentation"},
 				prompt.Suggest{Text: "StandardLib", Description: "Golang standard library docs"},
 			},
