@@ -1,4 +1,4 @@
-package lib
+package mapping
 
 import (
 	"encoding/json"
