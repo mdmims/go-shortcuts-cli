@@ -11,7 +11,7 @@ import (
 	prompt "github.com/c-bata/go-prompt"
 )
 
-//go:generate go run embed/main.go
+//go:generate go run embed/embed.go
 
 var shellCommands commands.Commands = commands.New()
 
@@ -76,7 +76,7 @@ func main() {
 		// additionally, serve the corresponding website through the client default browser
 		firstCommand := getRegexGroups(Input)
 		if firstCommand != nil {
-			lib.Run(Input, splitCommands)
+			mapping.Run(Input, splitCommands)
 		} else {
 			fmt.Println("Unknown command")
 		}

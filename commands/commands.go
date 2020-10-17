@@ -12,11 +12,9 @@ type Commands struct {
 func New() Commands {
 	return Commands{
 		MainSuggestions: []prompt.Suggest{
-			{Text: "confluence", Description: "Confluence documentation for EDAP"},
-			{Text: "coretech", Description: "CoreTech releated resources"},
-			{Text: "github", Description: "Github EDAP repoistories"},
-			{Text: "jira", Description: "JIRA releated stories and release pages"},
-			{Text: "rps", Description: "RPS client related links"},
+			{Text: "github", Description: "Github repositories"},
+			{Text: "golang", Description: "Golang resources"},
+			{Text: "python", Description: "Python resources"},
 		},
 		SubSuggestions: map[string][]prompt.Suggest{
 			"github": {
